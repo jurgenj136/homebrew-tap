@@ -42,4 +42,8 @@ class Pushover < Formula
       end
     end
   end
+
+  test do
+    system "#{bin}/pushover", "--json", "version"
+  end
 end
